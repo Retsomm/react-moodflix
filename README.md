@@ -17,4 +17,4 @@ API：TMDB
 
 react hook：useState、useEffect、useDebounce(延遲使用者在輸入框的內容，藉以減少呼叫API的次數)
 
-這是一個從https://youtu.be/dCLhUialKPQ?si=85sq0yQ5JnxnYeTp學習的react專案。
+這是一個從 https://youtu.be/dCLhUialKPQ?si=85sq0yQ5JnxnYeTp 學習的react專案。
