@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+
+*{
+  font-family: '微軟正黑體',serif;
+  box-sizing: border-box;
+  padding: 0;
+}
+body{
+  background-color: #151e4b;
+  color: antiquewhite;
+}
+header {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  margin-top: 50px;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+h2 {
+  font-size: 36px;
+  margin-top: 50px;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+.movie-card {
+  width: 245px;
+  height: 450px;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #110d2b;
+  font-size: 14px;
+}
+.movie-card img {
+  border-radius: 10px;
+}
+.content {
+  display: flex;
+  justify-content: start;
+  font-size: 12px;
+}
+
+.rating {
+  display: flex;
+  width: 100%;
+}
+.star {
+  margin-right: 5px;
+}
+.trending {
+  overflow-x: auto; /* 允許水平滾動 */
+  overflow-y: hidden;
+}
+.trendUl {
+  display: flex;
+  justify-content: start;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.trendLi {
+  position: relative;
+  width: 200px;
+  margin-left: 200px;
+  white-space: nowrap;
+}
+.trendIndex {
+  font-size: 360px;
+  font-weight: 900;
+  position: absolute;
+  left: -170px;
+  top: -130px;
+  z-index:-1;
+}
+/* 整個捲軸 */
+.trending::-webkit-scrollbar {
+  height: 8px; /* 設定滾動條高度（橫向） */
+}
+
+/* 滾動條軌道（背景） */
+.trending::-webkit-scrollbar-track {
+  background: #f1f1f1; /* 淺灰色背景 */
+  border-radius: 10px;
+}
+
+/* 滾動條滑塊 */
+.trending::-webkit-scrollbar-thumb {
+  background: #888; /* 深灰色滑塊 */
+  border-radius: 10px;
+}
+
+/* 滑鼠懸停時的滾動條 */
+.trending::-webkit-scrollbar-thumb:hover {
+  background: #555; /* 滑鼠懸停時變暗 */
+}
+
+
+@media screen and (max-width:996px) {
+  h1{
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .trendLi {
+    position: relative;
+    width: 150px;
+    margin-left: 130px;
+    white-space: nowrap;
+  }
+  .trendIndex {
+    font-size: 280px;
+    font-weight: 900;
+    position: absolute;
+    left: -130px;
+    top: -100px;
+    z-index:-1;
+  }
+  .movie {
+    margin: 0;
+  }
+}
